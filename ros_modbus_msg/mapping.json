@@ -1,0 +1,26 @@
+{
+    "host"    : "192.168.1.222"       , 
+
+    "multiAxis_EMERGENCYSTOP_data" : [12999,255]  ,
+    "multiAxis_OriginAll_data" : [12997,255]  ,
+    
+    "num_ch" : 4 , 
+
+    "mapping" : {
+        "data_map": {
+            "1"         :  {"multiAxisStateRead"         : [6, 12000,  null, 2, 0]},     
+            "2"         :  {"multiAxisStop"              : [2,  null, 12096, 2, 1]},     
+            "3"         :  {"multiAxisRelativeMove"      : [2,  null, 12128, 2, 1]},      
+            "4"         :  {"multiAxisAbsoluteMove"      : [2, 12160, 12160, 2, 2]},     
+            "5"         :  {"multiAxisRelativeSpeedMove" : [4,  null, 12552, 2, 1]},    
+            "6"         :  {"multiAxisAbsoluteSpeedMove" : [4,  null, 12616, 2, 1]},     
+            "7"         :  {"multiAxisHoming"            : [2,  null, 12680, 2, 1]}    
+        },
+        "read_map" : {
+            "ch0" : ["X_1", 10120,2,10150,10102],
+            "ch1" : ["X_2", 10220,2,10250,10202],
+            "ch2" : [" Y ", 10320,2,10350,10302],
+            "ch3" : [" Z ", 10420,2,10450.10402]
+        }
+    }
+}
